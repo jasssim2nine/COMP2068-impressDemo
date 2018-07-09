@@ -6,15 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- CSS Section-->
+    <link href="css/reset.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
 
 
 </head>
-<body>
+<body onload="init();">
+
+    <div id="impress">
+
+        <!-- SLIDE  #1-->
+        <div id="1" class="step slide">
+            <div class="slide-text">
+                <p> There's a time machine over there, flip the switch</p>
+                <p><a href="#2">FLIP</a> it</p>
+                <p><a href="#3">WAIT</a> for your dad who's scientist. </p>
+            </div>
+        </div> 
+
+
+        <!-- SLIDE  #2-->
+        <div id="2" class="step slide" data-x="1500">
+            <div class="slide-text">
+                <p> You went back in time. It was fun.</p>
+                <div class="menu"><a href="#1">START OVER</a></div>
+            </div>
+        </div>  
+
+        <!-- SLIDE  #3-->
+        <div id="3" class="step slide" data-x="-1500">
+            <div class="slide-text">
+                <p> Your dad came home and din't let you use the time machine .</p>
+                <div class="menu"><a href="#1">START OVER</a></div>
+            </div>
+        </div>
+
+    </div>
+
 
 
     <!-- Javascript Section-->
-    <script src="Scripts/game.js"></script>
+    <script src="Scripts/lib/impress.js"></script>
+        <script src="Scripts/game.js"></script>
 
 </body>
 </html>
